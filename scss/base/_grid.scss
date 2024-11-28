@@ -1,0 +1,28 @@
+// ====================================[] grid.scss
+@use '../utils/variables'as var;
+@use '../utils/mixins' as mix;
+
+// CONTAINER
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    // Header
+    header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    // Main & Sidebar
+    .main-container {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    // Footer
+    footer {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}

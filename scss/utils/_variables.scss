@@ -1,0 +1,41 @@
+// ====================================[] variables.scss
+
+// Warna Dasar
+$color-primary-blue: #007BFF; // Biru segar untuk elemen utama (tombol utama, link utama)
+$color-secondary-gray: #6C757D; // Abu-abu untuk elemen sekunder (teks sekunder, border sekunder)
+$color-background-dark: #121212; // Background untuk dark mode
+$color-text-light: #EAEAEA; // Teks terang untuk dark mode
+$color-border-soft: #444444; // Border lembut untuk dark mode
+
+// Warna Aksen
+$color-accent-highlight: #FF6347; // Warna aksen untuk highlight (tombol penting, status aktif)
+
+// Warna Interaksi (Hover, Active, Fokus)
+$color-hover-blue: #0056b3; // Hover untuk tombol dan link utama
+$color-active-blue: #004085; // Aktif/terpilih untuk tombol dan link
+$color-focus-blue: #80bdff; // Warna fokus (misalnya saat form input terpilih)
+
+// Warna Tombol dan Elemen Interaktif
+$color-button-primary-bg: $color-primary-blue; // Background tombol utama
+$color-button-primary-text: #FFFFFF; // Teks tombol utama (putih)
+$color-button-hover-bg: $color-hover-blue; // Background tombol saat hover
+
+// Warna Dark Mode
+$color-dark-bg: #181818; // Background gelap untuk dark mode
+$color-dark-text: #CCCCCC; // Teks terang untuk dark mode
+$color-dark-border: #333333; // Border lebih gelap di dark mode
+
+// Warna Link dan Navigasi
+$color-link-main: $color-primary-blue; // Link utama (warna biru segar)
+$color-link-hover: #0056b3; // Hover untuk link utama (biru lebih gelap)
+$color-nav-background: #2c2f38; // Background untuk navigasi di dark mode
+$color-nav-text: #EAEAEA; // Teks navigasi di dark mode (putih atau abu-abu terang)
+
+// Warna Border
+$color-border-light: #DDDDDD; // Border terang untuk elemen umum (seperti form, kotak)
+$color-border-dark: #333333; // Border gelap untuk dark mode dan elemen aktif
+
+// Warna Shadow
+$color-shadow-light: rgba(0, 0, 0, 0.1); // Shadow halus dan ringan
+$color-shadow-medium: rgba(0, 0, 0, 0.3); // Shadow medium untuk menonjolkan elemen
+$color-shadow-dark: rgba(0, 0, 0, 0.982); // Shadow lebih gelap untuk elemen yang lebih menonjol
