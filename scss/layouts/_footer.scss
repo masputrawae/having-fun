@@ -1,0 +1,36 @@
+// ====================================[] footer.scss
+@use '../utils/variables'as var;
+@use '../utils/mixins' as mix;
+footer {
+    padding-bottom: 6rem;
+    background-color: var.$color-background-dark;
+    border-top: 3px solid var.$color-border-light;
+    text-align: center;
+    .social-link {
+        @include mix.flex-justify(center);
+        align-items: center;
+        padding: 10px;
+        a {
+            display: inline;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px 10px;
+            text-decoration: none;
+            border: 1px solid var.$color-link-main;
+            @include mix.hover-scale(1.5);
+
+            i {
+                color: black;
+            }
+        }       
+    }
+
+    .text-links {
+        a {
+            @include mix.link(var.$color-link-main, var.$color-link-hover);
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 1rem;
+    }
+}

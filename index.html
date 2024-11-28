@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=" ">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content=" ">
+
+    <title>Judul Halaman</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<!--[]=----------------=[] START: BODY []=----------------=[]-->
+<body>
+    <div class="container">
+        <!--=| HEADER |=-->
+        <header>
+            <h1>
+                <a href="#title">
+                    <span class="title-start">My</span>
+                    <span class="title-end">Notes</span>
+                </a>
+            </h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="bi bi-house"></i> Home</a></li>
+                    <li><a href="#"><i class="bi bi-info-circle"></i> About</a></li>
+                    <li><a href="#"><i class="bi bi-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#"><i class="bi bi-images"></i> Gallery</a></li>
+                    <li><a href="#"><i class="bi bi-journal"></i> Notes</a></li>
+                </ul>
+            </nav>
+
+            <div class="link-button">
+                <a href="#" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
+                <a class="search-button" href="#"><i class="bi bi-search"></i></a>
+            </div>
+        </header>
+
+        <!--=| MAIN CONTAINER |=-->
+        <div class="container-main">
+            <!--=| SIDEBAR/OFFCANVAS |=-->
+            <div class="sidebar">
+                <aside>
+                    <div class="logo-title">
+                        <img src="https://picsum.photos/150">
+                        <h2>Masputrawae</h2>
+                        <p>hohoho....</p>
+                    </div>
+                    <nav>
+                        <hr>
+                        <h3>Main Menu</h3>
+                        <ul>
+                            <li><a href="#">Recent Change</a></li>
+                            <li><a href="#">Last Modified</a></li>
+                            <li><a href="#">Archives</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                        <hr>
+                        <h3>Notes by Categories</h3>
+                        <ul>
+                            <li><a href="#">TEST</a></li>
+                            <li><a href="#">TEST</a></li>
+                            <li><a href="#">TEST</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+
+            <!--=| MAIN CONTENT |=-->
+            <div class="main-content">
+                <main>
+                    <article>
+                        <section class="header-article">
+                            <h1>Testing Typography with Lorem Ipsum</h1>
+                            <div class="info">
+                                <p>Author : Anonymus</p>
+                                <p>Published on: November 28, 2024</p>
+                                <p>Last Modified on: November 28, 2024</p>
+                            </div>
+                        </section>
+                        <section class="main-article">
+                            {{ content }}
+                        </section>
+
+                        <section class="footer-article">
+                            FOOTER
+                        </section>
+                    </article>                
+                </main>
+            </div>
+        </div>
+
+        <!--=| FOOTER |=-->
+        <footer>
+            <section class="social-link">
+                <a href="{{ site.facebook }}" class="social-icon" style="background-color: #3b5998" ><i class="bi bi-facebook"></i></a>
+                <a href="{{ site.instagram }}" class="social-icon" style="background-color: #ac2bac" ><i class="bi bi-instagram"></i></a>
+                <a href="{{ site.twitter }}" class="social-icon" style="background-color: #55acee" ><i class="bi bi-twitter"></i></a>
+                <a href="{{ site.github }}" class="social-icon" style="background-color: #333333" ><i class="bi bi-github"></i></a>
+                <a href="{{ site.youtube }}" class="social-icon" style="background-color: #dd0009" ><i class="bi bi-youtube"></i></a>
+                <a href="{{ site.discord }}" class="social-icon" style="background-color: #0059ff" ><i class="bi bi-discord"></i></a>
+            </section>
+            
+            <!-- Section: Text -->
+            <section class="text-links">
+                <p>
+                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a> |
+                    <a href="{{ '/terms.html' | relative_url }}">Terms of Service</a> |
+                    <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a> |
+                    <a href="#">Back To Top</a>
+                </p>
+            </section>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.owner }}. Semua hak dilindungi.</span>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!--=| FOR MOBILE ONLY |=-->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#"><i class="bi bi-briefcase"></i></a></li>
+            <li><a href="#"><i class="bi bi-images"></i></a></li>
+            <li><a href="#"><i class="bi bi-house"></i></a></li>
+            <li><a href="#"><i class="bi bi-journal"></i></a></li>
+            <li><a href="#" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a></li>
+        </ul>
+    </nav>
+    <script src="assets/js/script.js"></script>
+</body>
+<!--[]=----------------=[] END: BODY []=----------------=[]-->
+</html>

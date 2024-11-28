@@ -1,0 +1,73 @@
+// ====================================[] mixins.scss
+@use "../utils/variables" as var;
+
+// JUSTIFY FLEX
+@mixin flex-justify($justify: space-between) {
+    display: flex;
+    justify-content: $justify;
+}
+
+// LINK
+@mixin link($link-color, $link-hover-color) {
+    text-decoration: none;
+    color: $link-color;
+    transition: color 0.5s ease;
+
+    &:hover, &:active {
+        color: $link-hover-color;
+    }
+}
+
+// HOVER SCALE
+@mixin hover-scale($scale: 1.1) {
+    transition: all 0.3s ease;
+    &:hover, &:active {
+        transform: scale($scale);
+    }
+}
+
+// BUTTON
+@mixin button {
+    cursor: pointer;
+    font: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 1px 1px 8px var.$color-shadow-dark;
+    border-radius: 5px;
+        
+    &:hover {
+        transform: scale(1.2);
+    }
+    
+    i {
+        border-radius: 5px;
+        padding: 1px 6px;
+        border: 1px solid var.$color-border-dark;
+        color: var.$color-link-main;
+        transition: color 0.3s ease;
+            
+        &:hover {
+            color: var.$color-link-hover;
+        }
+    }
+}
+
+// LINK BUTTON
+@mixin link-button {
+    @include flex-justify(center);
+    align-items: center;
+    background-color: var.$color-dark-bg;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var.$color-border-light;
+    @include link(var.$color-link-main, var.$color-link-hover);
+    @include hover-scale (1.2);
+}
+
+// BACKGROUND IMAGES SETTING
+@mixin background-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
