@@ -157,6 +157,7 @@ header nav a:hover {
 main {
   padding: 1rem;
   margin: 1rem;
+  overflow: hidden;
 }
 
 .sidebar {

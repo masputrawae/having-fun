@@ -3,7 +3,7 @@ title: "My Notes"
 lang: "id"
 
 #=================================[=]
-keywords: "Notes, Study, Science, Technology, Tutorial, Guide, Having Fun, Learning, Insights, Knowledge, Exploration, Experiments, Discoveries, Education, Projects, Research, Innovation, Development, Skills, Tech Tips, Practical Guide, DIY, Walkthrough, Resources, Documentation, Hands-On, Creative Process, Interactive, Learning Hub, Step-by-Step, Educational Resources, Workshop, Learning Curve, Skill Building, Best Practices, Toolkit, Insightful Tips, Quick Tips, Educational Journey, Fun Learning, Knowledge Sharing, Resource Hub, Mastering Skills, Science Projects, Coding Playground, Experiment Lab, Pro Guide, Geek Out, Upgrades, Progress, Discovery Zone, Documentation Station, Problem-Solving, Techies, Breakthroughs, Life Hacks"
+keywords: ""
 
 #=================================[=]
 owner: "Putra Jaya"
@@ -12,8 +12,8 @@ google_analytics: "G-W9TMTZZYG5"
 timezone: Asia/Jakarta
 
 #=================================[=] 
-url: "https://masputrawae.github.io"
-baseurl: "/my-notes"
+url: ""
+baseurl: ""
 
 #=================================[=]
 github: "https://github.com/masputrawae/"
@@ -34,6 +34,9 @@ collections:
   pages:
     output: true
   tabs:
+    output: true
+    sort_by: order
+  categories:
     output: true
     sort_by: order
     

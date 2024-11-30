@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 #=================================[=] Menggunakan Jekyll
 gem "jekyll", "~> 4.3.4"
-gem "jekyll-seo-tag" # Untuk optimasi SEO
+gem "jekyll-seo-tag"
 gem "webrick"
 
 group :jekyll_plugins do
@@ -18,8 +18,6 @@ end
 
 #=================================[=] Pastikan untuk menginstal bundler jika belum
 gem "bundler"
-gem "sassc-rails"
-gem "sassc"
 gem "html-proofer"
 gem 'kramdown-syntax-coderay'
 gem 'kramdown-parser-gfm'
