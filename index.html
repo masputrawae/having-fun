@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="in" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,135 +7,173 @@
     <meta name="description" content=" ">
     <meta name="author" content="Nama Anda">
     <meta name="keywords" content=" ">
-
-    <title>Judul Halaman</title>
-
+    <title>My Learning Projects</title>
+    
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
-
-<!--[]=----------------=[] START: BODY []=----------------=[]-->
 <body>
-    <div class="container">
-        <!--=| HEADER |=-->
+    <!-- START: CONTAINER -->
+    <div class="full-container">
+        <!-- START: HEADER -->
         <header>
+            
+            <!-- START: TITLE HEADER -->
             <h1>
-                <a href="#title">
-                    <span class="title-start">My</span>
-                    <span class="title-end">Notes</span>
-                </a>
+                <span class="title-start">My</span>
+                <span class="title-end">Notes</span>
             </h1>
+            <!-- END: TITLE HEADER -->
             
+            <!-- START: NAVIGATION HEADER-->
             <nav>
-                <ul>
-                    <li><a href="#"><i class="bi bi-house"></i> Home</a></li>
-                    <li><a href="#"><i class="bi bi-info-circle"></i> About</a></li>
-                    <li><a href="#"><i class="bi bi-briefcase"></i> Portfolio</a></li>
-                    <li><a href="#"><i class="bi bi-images"></i> Gallery</a></li>
-                    <li><a href="#"><i class="bi bi-journal"></i> Notes</a></li>
-                </ul>
+                <a href=""><i class="bi bi-search"></i></a>
+                <a href="" class="switch-mode" id="theme-switcher"><i class="bi-moon-stars switchModeIcon"></i></a>
+                <a href="" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
             </nav>
-
-            <div class="link-button">
-                <a href="#" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
-                <a class="search-button" href="#"><i class="bi bi-search"></i></a>
-            </div>
-        </header>
-
-        <!--=| MAIN CONTAINER |=-->
-        <div class="container-main">
-            <!--=| SIDEBAR/OFFCANVAS |=-->
-            <div class="sidebar">
-                <aside>
-                    <div class="logo-title">
-                        <img src="https://picsum.photos/150">
-                        <h2>Masputrawae</h2>
-                        <p>hohoho....</p>
-                    </div>
-                    <nav>
-                        <hr>
-                        <h3>Main Menu</h3>
-                        <ul>
-                            <li><a href="#">Recent Change</a></li>
-                            <li><a href="#">Last Modified</a></li>
-                            <li><a href="#">Archives</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                        <hr>
-                        <h3>Notes by Categories</h3>
-                        <ul>
-                            <li><a href="#">TEST</a></li>
-                            <li><a href="#">TEST</a></li>
-                            <li><a href="#">TEST</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-
-            <!--=| MAIN CONTENT |=-->
-            <div class="main-content">
-                <main>
-                    <article>
-                        <section class="header-article">
-                            <h1>Testing Typography with Lorem Ipsum</h1>
-                            <div class="info">
-                                <p>Author : Anonymus</p>
-                                <p>Published on: November 28, 2024</p>
-                                <p>Last Modified on: November 28, 2024</p>
-                            </div>
-                        </section>
-                        <section class="main-article">
-                            {{ content }}
-                        </section>
-
-                        <section class="footer-article">
-                            FOOTER
-                        </section>
-                    </article>                
-                </main>
-            </div>
-        </div>
-
-        <!--=| FOOTER |=-->
-        <footer>
-            <section class="social-link">
-                <a href="{{ site.facebook }}" class="social-icon" style="background-color: #3b5998" ><i class="bi bi-facebook"></i></a>
-                <a href="{{ site.instagram }}" class="social-icon" style="background-color: #ac2bac" ><i class="bi bi-instagram"></i></a>
-                <a href="{{ site.twitter }}" class="social-icon" style="background-color: #55acee" ><i class="bi bi-twitter"></i></a>
-                <a href="{{ site.github }}" class="social-icon" style="background-color: #333333" ><i class="bi bi-github"></i></a>
-                <a href="{{ site.youtube }}" class="social-icon" style="background-color: #dd0009" ><i class="bi bi-youtube"></i></a>
-                <a href="{{ site.discord }}" class="social-icon" style="background-color: #0059ff" ><i class="bi bi-discord"></i></a>
-            </section>
+            <!-- END: NAVIGATION HEADER-->
             
-            <!-- Section: Text -->
-            <section class="text-links">
+        </header>
+        <!-- END: HEADER -->
+        
+        <!-- START: CONTAINER MAIN AND SIDEBAR -->
+        <div class="main-container">
+            
+            <!-- START: SIDEBAR -->
+            <aside class="sidebar">
+                
+                <!-- START: HEADER SIDEBAR -->
+                <section class="header-sidebar">
+                    <img src="https://picsum.photos/150" alt="">
+                    <h2>Masputrawae</h2>
+                    <p>Deskripsi Singkat/Slogan</p>
+                </section>
+                <!-- END: HEADER SIDEBAR -->
+                
+                <!-- START: NAVIGATION SIDEBAR -->
+                <nav>
+                    <hr>
+                    <h3>Main Menu</h3>
+                    <ul>
+                        <li><a href=""><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><a href=""><i class="bi bi-clock-history"></i> Recent Change</a></li>
+                        <li><a href=""><i class="bi bi-pencil-square"></i> Last Modified</a></li>
+                        <li><a href=""><i class="bi bi-archive"></i> Archives</a></li>
+                        <li><a href=""><i class="bi bi-tags"></i> Categories</a></li>
+                    </ul>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><a href=""><i class="bi bi-journal-code"></i> Tutorial</a></li>
+                        <li><a href=""><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
+                        <li><a href=""><i class="bi bi-question-circle"></i> Help</a></li>
+                        <li><a href=""><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
+                    </ul>
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href=""><i class="bi bi-person"></i> About</a></li>
+                        <li><a href=""><i class="bi bi-images"></i> Gallery</a></li>
+                        <li><a href=""><i class="bi bi-briefcase"></i> Portfolio</a></li>
+                        <li><a href=""><i class="bi bi-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- END: NAVIGATION SIDEBAR -->
+                
+            </aside>
+            <!-- END: NAVIGATION SIDEBAR -->
+            
+            <!-- START: MAIN CONTENT -->
+            <main class="home-page">
+                <!-- START: HERO SECTION -->
+                <section class="hero">
+                    <h1>Welcome to My Notes</h1>
+                    <p>Deskripsi tentang situs</p>
+                    <div class="button-action">
+                        <a href="#explore">Explore</a>
+                        <a href="">Join Discord</a>
+                    </div>
+                </section>
+                <!-- END: HERO SECTION -->
+                
+                <!-- START: HIGHLIGHT ARTIKEL -->
+                <section class="highlight">
+                    <h2>Highlight Articles</h2>
+                    <!-- START: CARD -->
+                    <div class="card">
+                        <img src="https://picsum.photos/150/250" alt="">
+                        <section class="information">
+                            <p>Author: Other</p>
+                            <p>Publish on: YYYY-MM-DD</p>
+                            <p>Last Modified at: YYYY-MM-DD</p>
+                            <p>Description: Deskripsi Singkat</p>
+                        </section>
+                        <h3>
+                            <a href="">Judul Article</a>
+                        </h3>
+                    </div>
+                    <!-- END: CARD -->
+                    
+                </section>
+                <!-- END: HIGHLIGHT ARTIKEL -->
+                
+                <!-- START: CATEGORIES LIST -->
+                <section class="categories">
+                    <h2>Highlight Category</h2>
+                    <div class="card">
+                        <img src="https://picsum.photos/150/250" alt="">
+                        <p>Deskripsi pembahasan di kategori ini</p>
+                        <h3>
+                            <a href="">Judul Kategori</a>
+                        </h3>
+                    </div>
+                </section>
+                <!-- END: CATEGORIES LIST -->
+                
+            </main>
+            <!-- END: MAIN CONTENT -->
+            
+        </div>
+        <!-- END: CONTAINER MAIN AND SIDEBAR -->
+        
+        <!-- START: FOOTER -->
+        <footer>
+            <!-- START: TENTANG -->
+            <section class="tentang">
+                <h4>Tentang:</h4>
                 <p>
-                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a> |
-                    <a href="{{ '/terms.html' | relative_url }}">Terms of Service</a> |
-                    <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a> |
-                    <a href="#">Back To Top</a>
+                    Nulla voluptate est velit proident do sunt. Voluptate incididunt nulla nulla anim consequat. Ex irure voluptate ipsum duis nisi velit anim aliquip proident cillum. Enim sint enim nulla ullamco minim esse in est occaecat. Voluptate id consectetur sunt ullamco ad in irure laborum nulla dolore commodo duis. Sunt sint cupidatat labore culpa est.
                 </p>
             </section>
+            <!-- END: TENTANG -->
             
-            <!-- Copyright -->
-            <div class="copyright">
-                <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.owner }}. Semua hak dilindungi.</span>
-            </div>
+            <!-- START: SOCIAL LINKS -->
+            <section class="social-link">
+                <ul>
+                    <h4>Social Media:</h4>
+                    <li><a href=""><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href=""><i class="bi bi-youtube"></i> YouTube</a></li>
+                    <li><a href=""><i class="bi bi-github"></i> Github</a></li>
+                    <li><a href=""><i class="bi bi-discord"></i> Discord</a></li>
+                </ul>                
+            </section>
+            <!-- END: SOCIAL LINKS -->
+            
+            <!-- START: COPYRIGHT -->
+            <section class="copyright">
+                <hr>
+                <p>
+                    <a href="">Privacy Policy</a>
+                    | <a href="">Term of Service</a>
+                    | <a href="">Disclaimer</a>
+                    | <a href="">Back To Top</a>
+                </p>
+                <p>Dibuat Dengan ♥️ | <strong>I Still Appreciate Their Work, Check Here: </strong><a href="">Credits</a></p>
+                <p>&copy; 2024 - Masputrawae - <a href="">My notes</a> | Semua Hak Cipta Dilindungi.</p>
+            </section>
+            <!-- END: COPYRIGHT -->
         </footer>
-
     </div>
-
-
-    <!--=| FOR MOBILE ONLY |=-->
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="#"><i class="bi bi-briefcase"></i></a></li>
-            <li><a href="#"><i class="bi bi-images"></i></a></li>
-            <li><a href="#"><i class="bi bi-house"></i></a></li>
-            <li><a href="#"><i class="bi bi-journal"></i></a></li>
-            <li><a href="#" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a></li>
-        </ul>
-    </nav>
-    <script src="assets/js/script.js"></script>
+    <!-- END: CONTAINER-->
 </body>
-<!--[]=----------------=[] END: BODY []=----------------=[]-->
 </html>

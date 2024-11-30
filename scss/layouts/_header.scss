@@ -1,63 +1,47 @@
-// ====================================[] header.scss
-@use '../utils/variables'as var;
+// header.scss
 @use '../utils/mixins' as mix;
+@use '../utils/variables' as var;
 
-// HEADER
 header {
-    padding: 10px;
-    background-color: var.$color-background-dark;
-    border-bottom: 3px solid var.$color-border-light;
-    box-shadow: 10px 10px 25px var.$color-shadow-dark;
-    @include mix.flex-justify(space-between);
-    
+    padding: 1rem;
+    @include mix.flex-justify;
+    background-color: var(--primary-bg);
+    border-bottom: 3px solid var(--neutral-color);
+    border-right: 3px solid var(--neutral-color);
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 50px var(--neutral-color);
+    z-index: 1050;
+    transition: all 1s ease;
+    &:hover {
+        color: var(--hover-blue);
+        border-color: var(--hover-blue);
+        box-shadow: 0px 1px 20px var(--hover-blue);
+        border-radius: 0;
+    }
+
+
     // TITLE
-    h1{
-        .title-start {color: var.$color-link-main;}
-        .title-end {color: var.$color-text-light;}
-        @include mix.hover-scale;
-    }
+    .title-start {color: var(--accent-blue);}
+    .title-end {color: var(--primary-text);}
 
-    // LINK IN HEADER
-    a {
-        @include mix.link(var.$color-link-main, var.$color-link-hover);
-    }
-
-    // NAVIGATION
+    // LINK BUTTON
     nav {
-        display: none;
-    }
+        padding: 5px 5px;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--accent-blue);
+            border: 1px solid var(--neutral-color);
+            border-radius: 10px;
+            padding: 5px 10px;
 
-    .link-button {
-        display: flex;
-        // SEARCH BUTTON
-        .search-button {
-            margin-top: 5px;
-            margin-left: 10px;
-            @include mix.link-button;
-        }
-        // TOGGLE BUTTON SIDEBAR
-        .sidebar-toggle {
-            display: none;
-
-            @media (min-width: 1024px) {
-                display: block;
-                margin-top: 5px;
-                margin-left: 10px;
-                @include mix.link-button;
+            transition: all 0.5s ease;
+            &:hover {
+                color: var(--hover-blue);
+                border-color: var(--hover-blue);
+                box-shadow: 0px 0px 4px var(--hover-blue);
+                transform: scale(1.1);
             }
-        }
-    }
-
-    // MEDIA QUERY
-    @media (min-width: 1024px) {
-        nav {
-            display: block;
-            margin-left: 30rem;
-        }
-        ul {
-            list-style: none;
-            @include mix.flex-justify;
-            li {padding: 10px 10px;}
         }
     }
 }

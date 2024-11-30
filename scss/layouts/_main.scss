@@ -1,13 +1,6 @@
-// ====================================[] main.scss
-@use '../utils/variables'as var;
-@use '../utils/mixins' as mix;
-
-.container-main {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)),  url('../../assets/img/background.jpeg');
-    @include mix.background-image;
-}
+// main.scss
 
 main {
-    width: 100vw;
     padding: 1rem;
+    margin: 1rem;
 }

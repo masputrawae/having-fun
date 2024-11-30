@@ -1,0 +1,31 @@
+// layout.scss
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as var;
+.full-container {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+// SIDEBAR OPEN & CLOSE
+.main-container {
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    transition: grid-template-columns 0.3s ease;
+    .sidebar {
+        transition: all 0.2s ease-out;
+        opacity: 0;
+        height: 100vh;
+    }
+}
+
+.main-container.open {
+    grid-template-columns: 250px 1fr;
+    .sidebar {
+        opacity: 1;
+        height: 100%;
+    }
+}
+

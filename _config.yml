@@ -1,0 +1,68 @@
+#=================================[=]
+title: "My Notes"
+lang: "id"
+
+#=================================[=]
+keywords: "Notes, Study, Science, Technology, Tutorial, Guide, Having Fun, Learning, Insights, Knowledge, Exploration, Experiments, Discoveries, Education, Projects, Research, Innovation, Development, Skills, Tech Tips, Practical Guide, DIY, Walkthrough, Resources, Documentation, Hands-On, Creative Process, Interactive, Learning Hub, Step-by-Step, Educational Resources, Workshop, Learning Curve, Skill Building, Best Practices, Toolkit, Insightful Tips, Quick Tips, Educational Journey, Fun Learning, Knowledge Sharing, Resource Hub, Mastering Skills, Science Projects, Coding Playground, Experiment Lab, Pro Guide, Geek Out, Upgrades, Progress, Discovery Zone, Documentation Station, Problem-Solving, Techies, Breakthroughs, Life Hacks"
+
+#=================================[=]
+owner: "Putra Jaya"
+description: "Tempat Berbagi Keluh Kesah"
+google_analytics: "G-W9TMTZZYG5"
+timezone: Asia/Jakarta
+
+#=================================[=] 
+url: "https://masputrawae.github.io"
+baseurl: "/my-notes"
+
+#=================================[=]
+github: "https://github.com/masputrawae/"
+twitter: "https://x.com/Masputrawae"
+facebook: "https://www.facebook.com/profile.php?id=61566134978045"
+instagram: "https://www.instagram.com/masputrawae/"
+discord: "https://discord.gg/nM4EP8DJFZ"
+email: "masputrawae.official@gmail.com"
+youtube: "https://www.youtube.com/@masputrawae"
+
+#=================================[=]
+paginate: 5
+paginate_path: "/page:num/"
+excerpt_separator: ""
+
+#=================================[=]
+collections:
+  pages:
+    output: true
+  tabs:
+    output: true
+    sort_by: order
+    
+#=================================[=]
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:title/"      
+      
+#=================================[=]
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-toc
+  - jekyll-sitemap
+  
+#=================================[=]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - drafts
+  - .sass-cache/
+  - .jekyll-cache/
+
+#=================================[=]
+markdown: kramdown
