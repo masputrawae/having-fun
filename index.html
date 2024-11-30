@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="in">
+<html lang="in" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <title>Judul halaman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=" ">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content=" ">
+    <title>My Learning Projects</title>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <!-- START: CONTAINER -->
@@ -19,9 +27,9 @@
             
             <!-- START: NAVIGATION HEADER-->
             <nav>
-                <a href="">search</a>
-                <a href="">switch theme</a>
-                <a href="">toggle sidebar</a>
+                <a href=""><i class="bi bi-search"></i></a>
+                <a href="" class="switch-mode" id="theme-switcher"><i class="bi-moon-stars switchModeIcon"></i></a>
+                <a href="" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
             </nav>
             <!-- END: NAVIGATION HEADER-->
             
@@ -44,27 +52,28 @@
                 
                 <!-- START: NAVIGATION SIDEBAR -->
                 <nav>
+                    <hr>
                     <h3>Main Menu</h3>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Recent Change</a></li>
-                        <li><a href="">Last Modified</a></li>
-                        <li><a href="">Archives</a></li>
-                        <li><a href="">Categories</a></li>
+                        <li><a href=""><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><a href=""><i class="bi bi-clock-history"></i> Recent Change</a></li>
+                        <li><a href=""><i class="bi bi-pencil-square"></i> Last Modified</a></li>
+                        <li><a href=""><i class="bi bi-archive"></i> Archives</a></li>
+                        <li><a href=""><i class="bi bi-tags"></i> Categories</a></li>
                     </ul>
                     <h3>Tools</h3>
                     <ul>
-                        <li><a href="">Tutorial</a></li>
-                        <li><a href="">Cheat Sheet</a></li>
-                        <li><a href="">Help</a></li>
-                        <li><a href="">Coming Soon</a></li>
+                        <li><a href=""><i class="bi bi-journal-code"></i> Tutorial</a></li>
+                        <li><a href=""><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
+                        <li><a href=""><i class="bi bi-question-circle"></i> Help</a></li>
+                        <li><a href=""><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
                     </ul>
                     <h3>Pages</h3>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Portofolio</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href=""><i class="bi bi-person"></i> About</a></li>
+                        <li><a href=""><i class="bi bi-images"></i> Gallery</a></li>
+                        <li><a href=""><i class="bi bi-briefcase"></i> Portfolio</a></li>
+                        <li><a href=""><i class="bi bi-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
                 <!-- END: NAVIGATION SIDEBAR -->
@@ -130,25 +139,29 @@
             <!-- START: TENTANG -->
             <section class="tentang">
                 <h4>Tentang:</h4>
-                <p>Ucapan sapaan dan apapun tuliskan disini dan dapat biaya dan manfaat sabun temulawak herbal alami yang asli tetap disimpan di dalam off canvas</p>
+                <p>
+                    Nulla voluptate est velit proident do sunt. Voluptate incididunt nulla nulla anim consequat. Ex irure voluptate ipsum duis nisi velit anim aliquip proident cillum. Enim sint enim nulla ullamco minim esse in est occaecat. Voluptate id consectetur sunt ullamco ad in irure laborum nulla dolore commodo duis. Sunt sint cupidatat labore culpa est.
+                </p>
             </section>
             <!-- END: TENTANG -->
             
             <!-- START: SOCIAL LINKS -->
             <section class="social-link">
                 <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">YouTube</a></li>
-                    <li><a href="">Github</a></li>
-                    <li><a href="">Discord</a></li>
-                </ul>
+                    <h4>Social Media:</h4>
+                    <li><a href=""><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href=""><i class="bi bi-youtube"></i> YouTube</a></li>
+                    <li><a href=""><i class="bi bi-github"></i> Github</a></li>
+                    <li><a href=""><i class="bi bi-discord"></i> Discord</a></li>
+                </ul>                
             </section>
             <!-- END: SOCIAL LINKS -->
             
             <!-- START: COPYRIGHT -->
             <section class="copyright">
+                <hr>
                 <p>
                     <a href="">Privacy Policy</a>
                     | <a href="">Term of Service</a>
