@@ -1,4 +1,30 @@
 ---
 layout: default
 ---
-{{ content }}
+<article class="posts">
+    <h1>{{ page.title }}</h1>
+    <section class="info-posts">
+        <small>
+            <p>Author: {{ page.author }}</p>
+            <p>Publish on: {{ page.date }}</p>
+            <p>Description: {{ page.description }}</p>
+        </small>
+    </section>
+    
+    <section class="tos-posts">
+        {% include toc.html %}
+    </section>
+    
+    <section class="markdown-posts">
+        {{ content }}
+    </section>
+    
+    <section class="footer-posts">
+        <small>
+            <p>Terkait: {{ page.related }}</p>
+            <p>Tags: {{ page.tags }}</p>
+            <p>Categories: {{ page.categories }}</p>
+            <p>Last Modified At: {{ page.last_modified_at}}</p>
+        </small>
+    </section>
+</article>

@@ -1,17 +1,6 @@
 <!DOCTYPE html>
-<html lang="in" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content=" ">
-    <meta name="author" content="Nama Anda">
-    <meta name="keywords" content=" ">
-    <title>My Learning Projects</title>
-    
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
-</head>
+<html lang="{{ site.lang }}" data-theme="dark">
+    {% include partials/head.html %}
 <body>
     <!-- START: CONTAINER -->
     <div class="full-container">
@@ -44,7 +33,7 @@
                 
                 <!-- START: HEADER SIDEBAR -->
                 <section class="header-sidebar">
-                    <img src="https://picsum.photos/150" alt="">
+                    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Masputrawae">
                     <h2>Masputrawae</h2>
                     <p>Deskripsi Singkat/Slogan</p>
                 </section>
@@ -55,25 +44,25 @@
                     <hr>
                     <h3>Main Menu</h3>
                     <ul>
-                        <li><a href=""><i class="bi bi-house-door"></i> Home</a></li>
-                        <li><a href=""><i class="bi bi-clock-history"></i> Recent Change</a></li>
-                        <li><a href=""><i class="bi bi-pencil-square"></i> Last Modified</a></li>
-                        <li><a href=""><i class="bi bi-archive"></i> Archives</a></li>
-                        <li><a href=""><i class="bi bi-tags"></i> Categories</a></li>
+                        <li><a href="{{ '/' | relative_url }}"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><a href="{{ '/recent-change.html' | relative_url }}"><i class="bi bi-clock-history"></i> Recent Change</a></li>
+                        <li><a href="{{ '/last-modified.html' | relative_url }}"><i class="bi bi-pencil-square"></i> Last Modified</a></li>
+                        <li><a href="{{ '/archives.html' | relative_url }}"><i class="bi bi-archive"></i> Archives</a></li>
+                        <li><a href="{{ '/categories.html' | relative_url }}"><i class="bi bi-tags"></i> Categories</a></li>
                     </ul>
                     <h3>Tools</h3>
                     <ul>
-                        <li><a href=""><i class="bi bi-journal-code"></i> Tutorial</a></li>
-                        <li><a href=""><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
-                        <li><a href=""><i class="bi bi-question-circle"></i> Help</a></li>
-                        <li><a href=""><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
+                        <li><a href="{{ '/tutorial.html' | relative_url }}"><i class="bi bi-journal-code"></i> Tutorial</a></li>
+                        <li><a href="{{ '/cheat-sheet.html' | relative_url }}"><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
+                        <li><a href="{{ '/help.html' | relative_url }}"><i class="bi bi-question-circle"></i> Help</a></li>
+                        <li><a href="{{ '/coming-soon.html' | relative_url }}"><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
                     </ul>
                     <h3>Pages</h3>
                     <ul>
-                        <li><a href=""><i class="bi bi-person"></i> About</a></li>
-                        <li><a href=""><i class="bi bi-images"></i> Gallery</a></li>
-                        <li><a href=""><i class="bi bi-briefcase"></i> Portfolio</a></li>
-                        <li><a href=""><i class="bi bi-envelope"></i> Contact</a></li>
+                        <li><a href="{{ '/'about.html | relative_url }}"><i class="bi bi-person"></i> About</a></li>
+                        <li><a href="{{ '/gallery.html' | relative_url }}"><i class="bi bi-images"></i> Gallery</a></li>
+                        <li><a href="portfolio.html"><i class="bi bi-briefcase"></i> Portfolio</a></li>
+                        <li><a href="{{ '/contact.html' | relative_url }}"><i class="bi bi-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
                 <!-- END: NAVIGATION SIDEBAR -->
@@ -105,12 +94,12 @@
             <section class="social-link">
                 <ul>
                     <h4>Social Media:</h4>
-                    <li><a href=""><i class="bi bi-facebook"></i> Facebook</a></li>
-                    <li><a href=""><i class="bi bi-twitter"></i> Twitter</a></li>
-                    <li><a href=""><i class="bi bi-instagram"></i> Instagram</a></li>
-                    <li><a href=""><i class="bi bi-youtube"></i> YouTube</a></li>
-                    <li><a href=""><i class="bi bi-github"></i> Github</a></li>
-                    <li><a href=""><i class="bi bi-discord"></i> Discord</a></li>
+                    <li><a href="{{ site.facebook }}"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href="{{ site.twitter }}"><i class="bi bi-twitter"></i> Twitter</a></li>
+                    <li><a href="{{ site.instagram }}"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href="{{ site.youtube }}"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    <li><a href="{{ site.github }}"><i class="bi bi-github"></i> Github</a></li>
+                    <li><a href="{{ site.discord }}"><i class="bi bi-discord"></i> Discord</a></li>
                 </ul>                
             </section>
             <!-- END: SOCIAL LINKS -->
@@ -119,13 +108,13 @@
             <section class="copyright">
                 <hr>
                 <p>
-                    <a href="">Privacy Policy</a>
-                    | <a href="">Term of Service</a>
-                    | <a href="">Disclaimer</a>
-                    | <a href="">Back To Top</a>
+                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
+                    | <a href="{{ '/terms.html' | relative_url }}">Term of Service</a>
+                    | <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
+                    | <a href="#">Back To Top</a>
                 </p>
-                <p>Dibuat Dengan ♥️ | <strong>I Still Appreciate Their Work, Check Here: </strong><a href="">Credits</a></p>
-                <p>&copy; 2024 - Masputrawae - <a href="">My notes</a> | Semua Hak Cipta Dilindungi.</p>
+                <p>Dibuat Dengan ♥️ | <strong>I Still Appreciate Their Work: </strong><a href="{{ '/credits.html' | relative_url }}">Credits</a></p>
+                <p>&copy; 2024 - Masputrawae - <a href="{{ site.url/my-notes }}">My notes</a> | Semua Hak Cipta Dilindungi.</p>
             </section>
             <!-- END: COPYRIGHT -->
         </footer>
