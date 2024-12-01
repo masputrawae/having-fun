@@ -4,105 +4,15 @@
     {% include partials/head.html %}
 </head>
 <body>
-    <!-- START : CONTAINER -->
     <div class="full-container">
-        <!-- START : HEADER -->
-        
-        <header>
-            
-            <h1>
-                <span class="start-title">{{ site.start-title }}</span>
-                <span class="end-title">{{ site.end-title }}</span>
-            </h1>
-            
-            <nav>
-                <a href="{{ '/search.html' | relative_url }}"><i class="bi bi-search"></i></a>
-                <a href="" class="switch-mode" id="theme-switcher"><i class="bi-moon-stars switchModeIcon"></i></a>
-                <a href="" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
-            </nav>
-            
-        </header>
-        
-        <!-- END : HEADER -->
-        
+        {% include partials/header.html %}
         <!-- START : MAIN & SIDEBAR -->
-        
         <div class="main-container">
-            
-            <!-- START : SIDEBAR -->
-            <aside>
-                <section class="header-sidebar">
-                    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="logo {{ site.owner }}">
-                    <h2>{{ site.owner }}</h2>
-                    <p><i><b>{{ site.description }}</b></i></p>
-                </section>
-                
-                <section class="navigation">
-                    
-                    <nav>
-                        <h3>Main Menu</h3>
-                        <ul>
-                            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                            <li><a href="">Kategori Pilihan</a></li>
-                            <li><a href="">Recent Change</a></li>
-                            <li><a href="">Last Modified</a></li>
-                            <li><a href="">Categories</a></li>
-                        </ul>
-                        <h3>Pages</h3>
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Portofolio</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Help</a></li>
-                        </ul>
-                    </nav>
-                    
-                </section>
-            </aside>
-            <!-- END : SIDEBAR -->
-            
-            <!-- START : MAIN -->
-            <main>
-                {{ content }}
-            </main>
-            <!-- END : MAIN -->
-            
+            {% include partials/sidebar.html %}
+            {{ content }}
         </div>
-        
         <!-- END : MAIN & SIDEBAR -->
-        
-        <!-- START : FOOTER -->
-        
-        <footer>
-            
-            <section class="social link">
-                <ul>
-                    <h4>Social Media:</h4>
-                    <li><a href="{{ site.facebook }}"><i class="bi bi-facebook"></i> Facebook</a></li>
-                    <li><a href="{{ site.twitter }}"><i class="bi bi-twitter"></i> Twitter</a></li>
-                    <li><a href="{{ site.instagram }}"><i class="bi bi-instagram"></i> Instagram</a></li>
-                    <li><a href="{{ site.youtube }}"><i class="bi bi-youtube"></i> YouTube</a></li>
-                    <li><a href="{{ site.github }}"><i class="bi bi-github"></i> Github</a></li>
-                    <li><a href="{{ site.discord }}"><i class="bi bi-discord"></i> Discord</a></li>
-                </ul>
-            </section>
-            
-            <section class="copyright">
-                <p>
-                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
-                    | <a href="{{ '/terms.html' | relative_url }}">Term of Service</a>
-                    | <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
-                    | <a href="#">Back To Top</a>
-                </p>
-                <p>Dibuat Dengan ♥️ | <strong>I Still Appreciate Their Work: </strong><a href="{{ '/credits.html' | relative_url }}">Credits</a></p>
-                <p>&copy; 2024 - Masputrawae - <a href="{{ site.url }}">My notes</a> | Semua Hak Cipta Dilindungi.</p>
-            </section>
-        </footer>
-        
-        <!-- END : FOOTER -->
-        
+        {% include partials/footer.html %}
     </div>
-    <!-- END : CONTAINER -->
 </body>
 </html>

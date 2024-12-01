@@ -1,72 +1,77 @@
-// theme.scss
-
 :root[data-theme=light] {
-    //
-    --primary-bg: ;
-    --primary-text: ;
-    --primary-border: ;
-    --primary-shadow: ;
-    
-    --secondary-bg: ;
-    --secondary-text: ;
-    --secondary-border: ;
-    --secondary-shadow: ;
-    
-    --tertiary-bg: ;
-    --tertiary-text: ;
-    --tertiary-border: ;
-    --tertiary-shadow: ;
-    
-    //
-    --color-link: ;
-    --color-hover: ;
-    --color-active: ;
-    --color-succses: ;
-    --color-warning: ;
-    --color-danger: ;
-    --color-muted: ;
-    
-    // 
-    --color-h1: ;
-    --color-h2: ;
-    --color-h3-h6: ;
-    
-    --color-code: ;
-    --color-hr: ;
-    --color-quote: ;
+    // Primary colors
+    --primary-bg: #ffffff; /* Putih bersih */
+    --primary-text: #0a0a0a; /* Abu gelap untuk teks utama */
+    --primary-border: #e0e0e0; /* Abu terang untuk garis */
+    --primary-shadow: rgba(0, 0, 0, 0.1); /* Shadow lembut */
+
+    // Secondary colors
+    --secondary-bg: #f8f9fa; /* Abu terang hampir putih */
+    --secondary-text: #1a1a1a; /* Abu sedang untuk teks sekunder */
+    --secondary-border: #d6d6d6; /* Abu terang untuk garis sekunder */
+    --secondary-shadow: rgba(0, 0, 0, 0.05); /* Shadow lebih lembut */
+
+    // Tertiary colors
+    --tertiary-bg: #e9ecef; /* Abu sangat lembut */
+    --tertiary-text: #353535; /* Abu lembut */
+    --tertiary-border: #ced4da; /* Warna abu yang lebih cerah */
+    --tertiary-shadow: rgba(0, 0, 0, 0.02); /* Hampir tanpa shadow */
+
+    // Actions & utilities
+    --color-link: #007bff; /* Biru link */
+    --color-hover: #00458f; /* Biru lebih gelap saat hover */
+    --color-active: #004085; /* Biru gelap saat aktif */
+    --color-success: #28a745; /* Hijau untuk sukses */
+    --color-warning: #ffc107; /* Kuning untuk peringatan */
+    --color-danger: #dc3545; /* Merah untuk bahaya */
+    --color-muted: #6c757d; /* Abu lembut untuk elemen redup */
+
+    // Typography
+    --color-h1: #0a0a0a; /* Hitam abu untuk heading */
+    --color-h2: #343a40; /* Abu lebih gelap */
+    --color-h3-h6: #495057; /* Abu terang untuk sub-heading */
+    --color-code: #e83e8c; /* Merah muda untuk kode */
+    --color-hr: #dee2e6; /* Garis abu terang */
+    --color-quote: #6c757d; /* Abu lembut untuk kutipan */
+
+    --background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.700), rgba(255, 255, 255, 0.700)), url('../../assets/img/background.jpeg');
 }
 
-:root[data-theme=light] {
-    //
-    --primary-bg: ;
-    --primary-text: ;
-    --primary-border: ;
-    --primary-shadow: ;
-    
-    --secondary-bg: ;
-    --secondary-text: ;
-    --secondary-border: ;
-    --secondary-shadow: ;
-    
-    --tertiary-bg: ;
-    --tertiary-text: ;
-    --tertiary-border: ;
-    --tertiary-shadow: ;
-    
-    //
-    --color-link: ;
-    --color-hover: ;
-    --color-active: ;
-    --color-succses: ;
-    --color-warning: ;
-    --color-danger: ;
-    --color-muted: ;
-    
-    // 
-    --color-h1: ;
-    --color-h2: ;
-    --color-h3-h6: ;
-    --color-code: ;
-    --color-hr: ;
-    --color-quote: ;
+:root[data-theme=dark] {
+    // Primary colors
+    --primary-bg: #121212; /* Hitam abu untuk background */
+    --primary-text: #f1f1f1; /* Putih hampir abu untuk teks */
+    --primary-border: #323232; /* Abu gelap untuk garis */
+    --primary-shadow: rgba(255, 255, 255, 0.1); /* Shadow lembut putih */
+
+    // Secondary colors
+    --secondary-bg: #1e1e1e; /* Abu hitam */
+    --secondary-text: #d4d4d4; /* Abu terang untuk teks sekunder */
+    --secondary-border: #3a3a3a; /* Abu gelap untuk garis sekunder */
+    --secondary-shadow: rgba(255, 255, 255, 0.05); /* Shadow lebih lembut */
+
+    // Tertiary colors
+    --tertiary-bg: #252525; /* Abu lebih terang */
+    --tertiary-text: #b9b9b9; /* Abu lembut */
+    --tertiary-border: #424242; /* Warna abu lebih cerah */
+    --tertiary-shadow: rgba(255, 255, 255, 0.02); /* Hampir tanpa shadow */
+
+    // Actions & utilities
+    --color-link: #66ccff; /* Biru terang untuk link */
+    --color-hover: #33bbff; /* Biru cerah saat hover */
+    --color-active: #0099ff; /* Biru aktif */
+    --color-success: #37d67a; /* Hijau terang */
+    --color-warning: #ffcc00; /* Kuning terang */
+    --color-danger: #ff6b6b; /* Merah terang */
+    --color-muted: #8c8c8c; /* Abu lembut untuk elemen redup */
+
+    // Typography
+    --color-h1: #e5e5e5; /* Putih terang untuk heading */
+    --color-h2: #c8c8c8; /* Abu terang */
+    --color-h3-h6: #a9a9a9; /* Abu lembut untuk sub-heading */
+    --color-code: #ff79c6; /* Pink terang untuk kode */
+    --color-hr: #4e4e4e; /* Garis abu gelap */
+    --color-quote: #aaaaaa; /* Abu lembut untuk kutipan */
+
+    --background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url('../../assets/img/background.jpeg');
 }

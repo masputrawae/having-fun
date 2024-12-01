@@ -1,0 +1,16 @@
+//mixins
+@use '../utils/variables' as var;
+
+@mixin flex-justify($justify: space-between) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin link-a($color-link: var(--color-link), $color-link-hover: var(--color-hover)){
+    text-decoration: none;
+    color: $color-link;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $color-link-hover;
+    }
+}

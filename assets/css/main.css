@@ -1,58 +1,60 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-:root[data-theme=dark] {
-  --primary-bg: #0f0f0f;
-  --primary-text: #f0f0f0;
-  /* Secondary Colors */
-  --secondary-bg: #262626;
-  --secondary-text: #e0e0e0;
-  /* Accent Colors */
-  --accent-blue: #0073ff;
-  --accent-cyan: #00d1ff;
-  --accent-green: #00ff94;
-  /* Neutral Colors */
-  --neutral-color: #262626;
-  --hover-blue: #3399ff;
-  --active-blue: #005fcc;
-  /* Typography Colors */
-  --heading-color: #ffffff;
-  --text-color: #d9d9d9;
-  --muted-text: #a6a6a6;
-  --code-color: #00ff94;
-  --pre-color: #00d1ff;
-  --quote-color: #0073ff;
-  --small-color: #b3b3b3;
-  --italic-color: #e0e0e0;
-  --strong-color: #f0f0f0;
-  --hr-color: #333333;
-  --background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../../assets/img/background.jpeg");
+:root[data-theme=light] {
+  --primary-bg: #ffffff; /* Putih bersih */
+  --primary-text: #0a0a0a; /* Abu gelap untuk teks utama */
+  --primary-border: #e0e0e0; /* Abu terang untuk garis */
+  --primary-shadow: rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  --secondary-bg: #f8f9fa; /* Abu terang hampir putih */
+  --secondary-text: #1a1a1a; /* Abu sedang untuk teks sekunder */
+  --secondary-border: #d6d6d6; /* Abu terang untuk garis sekunder */
+  --secondary-shadow: rgba(0, 0, 0, 0.05); /* Shadow lebih lembut */
+  --tertiary-bg: #e9ecef; /* Abu sangat lembut */
+  --tertiary-text: #353535; /* Abu lembut */
+  --tertiary-border: #ced4da; /* Warna abu yang lebih cerah */
+  --tertiary-shadow: rgba(0, 0, 0, 0.02); /* Hampir tanpa shadow */
+  --color-link: #007bff; /* Biru link */
+  --color-hover: #00458f; /* Biru lebih gelap saat hover */
+  --color-active: #004085; /* Biru gelap saat aktif */
+  --color-success: #28a745; /* Hijau untuk sukses */
+  --color-warning: #ffc107; /* Kuning untuk peringatan */
+  --color-danger: #dc3545; /* Merah untuk bahaya */
+  --color-muted: #6c757d; /* Abu lembut untuk elemen redup */
+  --color-h1: #0a0a0a; /* Hitam abu untuk heading */
+  --color-h2: #343a40; /* Abu lebih gelap */
+  --color-h3-h6: #495057; /* Abu terang untuk sub-heading */
+  --color-code: #e83e8c; /* Merah muda untuk kode */
+  --color-hr: #dee2e6; /* Garis abu terang */
+  --color-quote: #6c757d; /* Abu lembut untuk kutipan */
+  --background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.700), rgba(255, 255, 255, 0.700)), url("../../assets/img/background.jpeg");
 }
 
-:root[data-theme=light] {
-  --primary-bg: #ffffff;
-  --primary-text: #000000;
-  /* Secondary Colors */
-  --secondary-bg: #f7f7f7;
-  --secondary-text: #333333;
-  /* Accent Colors */
-  --accent-blue: #0066cc;
-  --accent-cyan: #00aaff;
-  --accent-green: #00cc78;
-  /* Neutral Colors */
-  --neutral-color: #cccccc;
-  --hover-blue: #3399ff;
-  --active-blue: #004d99;
-  /* Typography Colors */
-  --heading-color: #000000;
-  --text-color: #333333;
-  --muted-text: #666666;
-  --code-color: #0066cc;
-  --pre-color: #00aaff;
-  --quote-color: #0066cc;
-  --small-color: #808080;
-  --italic-color: #555555;
-  --strong-color: #000000;
-  --hr-color: #dddddd;
-  --background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.628), rgba(255, 255, 255, 0.529)), url("../../assets/img/background.jpeg");
+:root[data-theme=dark] {
+  --primary-bg: #121212; /* Hitam abu untuk background */
+  --primary-text: #f1f1f1; /* Putih hampir abu untuk teks */
+  --primary-border: #323232; /* Abu gelap untuk garis */
+  --primary-shadow: rgba(255, 255, 255, 0.1); /* Shadow lembut putih */
+  --secondary-bg: #1e1e1e; /* Abu hitam */
+  --secondary-text: #d4d4d4; /* Abu terang untuk teks sekunder */
+  --secondary-border: #3a3a3a; /* Abu gelap untuk garis sekunder */
+  --secondary-shadow: rgba(255, 255, 255, 0.05); /* Shadow lebih lembut */
+  --tertiary-bg: #252525; /* Abu lebih terang */
+  --tertiary-text: #b9b9b9; /* Abu lembut */
+  --tertiary-border: #424242; /* Warna abu lebih cerah */
+  --tertiary-shadow: rgba(255, 255, 255, 0.02); /* Hampir tanpa shadow */
+  --color-link: #66ccff; /* Biru terang untuk link */
+  --color-hover: #33bbff; /* Biru cerah saat hover */
+  --color-active: #0099ff; /* Biru aktif */
+  --color-success: #37d67a; /* Hijau terang */
+  --color-warning: #ffcc00; /* Kuning terang */
+  --color-danger: #ff6b6b; /* Merah terang */
+  --color-muted: #8c8c8c; /* Abu lembut untuk elemen redup */
+  --color-h1: #e5e5e5; /* Putih terang untuk heading */
+  --color-h2: #c8c8c8; /* Abu terang */
+  --color-h3-h6: #a9a9a9; /* Abu lembut untuk sub-heading */
+  --color-code: #ff79c6; /* Pink terang untuk kode */
+  --color-hr: #4e4e4e; /* Garis abu gelap */
+  --color-quote: #aaaaaa; /* Abu lembut untuk kutipan */
+  --background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url("../../assets/img/background.jpeg");
 }
 
 *,
@@ -65,6 +67,7 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {
@@ -85,11 +88,7 @@ body {
 }
 
 .full-container {
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0;
+  background-color: var(--primary-bg);
 }
 
 .main-container {
@@ -97,104 +96,422 @@ body {
   grid-template-columns: 0px 1fr;
   transition: grid-template-columns 0.3s ease;
 }
+.main-container .sidebar {
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  height: 100vh;
+}
+
+.main-container.open {
+  grid-template-columns: 250px 1fr;
+}
+.main-container.open .sidebar {
+  opacity: 1;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: var(--primary-text);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-underline-offset: 4px;
+}
+main h1.h1, main h2.h1, main h3.h1, main h4.h1, main h5.h1, main h6.h1 {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+}
+main h1.h2, main h2.h2, main h3.h2, main h4.h2, main h5.h2, main h6.h2 {
+  font-size: clamp(1.125rem, 3vw, 1.75rem);
+}
+main h1.h3, main h2.h3, main h3.h3, main h4.h3, main h5.h3, main h6.h3 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+main h1.h4, main h2.h4, main h3.h4, main h4.h4, main h5.h4, main h6.h4 {
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
+}
+main h1.h5, main h2.h5, main h3.h5, main h4.h5, main h5.h5, main h6.h5 {
+  font-size: clamp(0.75rem, 1.75vw, 1.125rem);
+}
+main h1.h6, main h2.h6, main h3.h6, main h4.h6, main h5.h6, main h6.h6 {
+  font-size: clamp(0.625rem, 1.5vw, 1rem);
+}
+main p {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--tertiary-text);
+}
+main pre {
+  background-color: var(--tertiary-bg);
+  color: var(--color-code);
+  padding: 1rem;
+  border: 1px solid var(--tertiary-border);
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px var(--tertiary-shadow);
+}
+main code {
+  font-family: "Fira Code", "Courier New", monospace;
+  background: none;
+  color: inherit;
+}
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+main table th, main table td {
+  border: 1px solid var(--tertiary-border);
+  padding: 0.75rem;
+  text-align: left;
+}
+main table th {
+  background-color: var(--tertiary-bg);
+  color: var(--color-h1);
+  font-weight: bold;
+}
+main table td {
+  color: var(--secondary-text);
+}
+main table tr:nth-child(even) {
+  background-color: var(--tertiary-bg);
+}
+main table tr:hover {
+  background-color: var(--color-active);
+}
+main ul, main ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: var(--secondary-text);
+}
+main ul ul, main ul ol, main ol ul, main ol ol {
+  margin-top: 0.5rem;
+  padding-left: 1.75rem;
+  list-style-type: circle;
+}
+main ul ul ul, main ol ul ul {
+  list-style-type: square;
+}
+main li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+main li::marker {
+  color: var(--color-active);
+  font-size: 1rem;
+}
+
+main blockquote {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--secondary-text);
+  border-left: 4px solid var(--color-active);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background-color: var(--tertiary-bg);
+  border-radius: 0.5rem;
+}
+main blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: right;
+  color: var(--primary-text);
+  font-style: normal;
+}
+main a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease, text-decoration-color 0.2s ease;
+}
+main a:hover {
+  color: var(--color-active);
+  text-decoration-color: var(--color-hover);
+}
+main a:visited {
+  color: var(--color-muted);
+}
+main a:focus {
+  outline: 2px dashed var(--color-active);
+  outline-offset: 2px;
+}
 
 header {
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-bg);
-  border-bottom: 3px solid var(--neutral-color);
-  border-right: 3px solid var(--neutral-color);
-  border-radius: 0px 0px 20px 0px;
-  box-shadow: 0px 0px 50px var(--neutral-color);
-  z-index: 1050;
-  transition: all 1s ease;
+  padding: 10px;
+  background-color: var(--secondary-bg);
+  border-bottom: 3px solid var(--primary-border);
+  border-right: 3px solid var(--primary-border);
+  box-shadow: 2px 2px 1px var(--secondary-shadow);
+  border-bottom-right-radius: 30px;
+  transition: border-radius 2s ease, border-color 1s ease;
 }
-header:hover {
-  color: var(--hover-blue);
-  border-color: var(--hover-blue);
-  box-shadow: 0px 1px 20px var(--hover-blue);
-  border-radius: 0;
-header .title-end {
+header .start-title {
+  color: var(--color-active);
+}
+header .end-title {
   color: var(--primary-text);
 }
+header:hover {
+  border-radius: 0;
+  border-color: var(--color-hover);
+}
 header nav {
-  padding: 5px 5px;
+  padding: 5px;
 }
 header nav a {
   display: inline-block;
   text-decoration: none;
-  color: var(--accent-blue);
-  border: 1px solid var(--neutral-color);
-  border-radius: 10px;
+  border: 2px solid var(--tertiary-border);
+  color: var(--color-link);
+  border-radius: 5px;
+  margin: 0px 5px;
   padding: 5px 10px;
   transition: all 0.5s ease;
+  box-shadow: 0px 2px 4px var(--secondary-shadow);
 }
 header nav a:hover {
-  color: var(--hover-blue);
-  border-color: var(--hover-blue);
-  box-shadow: 0px 0px 4px var(--hover-blue);
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: var(--color-hover);
+  border-color: var(--color-hover);
+  box-shadow: 0px 0px 8px var(--color-hover);
+}
 
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between; /* Memastikan tombol dan input berada pada posisi yang benar */
+  width: 100%;
+  max-width: 400px; /* Bisa disesuaikan agar lebih mobile-friendly */
+  margin: 0 auto; /* Centering untuk layout mobile */
+}
+
+.search-container input {
+  width: calc(100% - 40px); /* Sesuaikan dengan ukuran tombol */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--tertiary-border);
+  border-radius: 0.5rem;
+}
+
+.search-btn {
+  background-color: var(--tertiary-bg);
+  border: 2px solid var(--tertiary-border);
+  padding: 3px 8px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--color-link);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  color: var(--color-active);
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+.search-btn:focus {
+  outline: none;
+  box-shadow: 0 2px 5px 3px rgba(0, 123, 255, 0.5);
+}
+
+#lunrsearchresults {
+  padding-top: 0.2rem;
+}
+
+.lunrsearchresult {
+  padding-bottom: 1rem;
+}
+
+.lunrsearchresult .title {
+  color: var(--color-link);
+}
+
+.lunrsearchresult .url {
+  color: var(--color-active);
+}
+
+.lunrsearchresult a {
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.lunrsearchresult a:hover, .lunrsearchresult a:focus {
+  text-decoration: none;
+}
+
+.lunrsearchresult a:hover .title {
+  text-decoration: underline;
+}
+
+.form-control {
+  width: 100%;
+  height: 35px;
+}
+
+main {
+  padding: clamp(1rem, 2vw, 1rem);
+  background-color: var(--primary-bg);
+}
+main .info-posts {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid var(--secondary-border);
+  border-radius: 10px;
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+main .info-posts p {
+  line-height: 1;
+  color: var(--color-muted);
+}
+main .toc-posts {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--secondary-border);
+  border-radius: 10px;
+}
+main .toc-posts ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: var(--color-active);
+}
+main .toc-posts ul a {
+  text-decoration: none;
+  color: var(--color-link);
+  transition: color 0.3s ease;
+}
+main .toc-posts ul a:hover {
+  color: var(--color-hover);
+}
+main .toc-posts ul a:visited {
+  color: var(--color-muted);
+}
+main .toc-posts ul a:focus {
+  outline: 2px dashed var(--color-active);
+  outline-offset: 2px;
+}
+
+.sidebar {
+  background-color: var(--secondary-bg);
+  border-right: 3px solid var(--secondary-border);
+  box-shadow: 0px 1px 20px var(--secondary-shadow);
+  overflow: auto;
+}
+.sidebar:hover {
+  border-color: var(--color-hover);
+  color: var(--color-hover);
+}
+.sidebar h2, .sidebar h3 {
+  color: var(--color-h3-h6);
+  transition: all 0.2s ease-out;
+}
+.sidebar h2:hover, .sidebar h3:hover {
+  color: var(--color-hover);
+}
+.sidebar h3 {
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 2rem;
+}
+.sidebar ul a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-link);
+  transition: all 0.5s ease;
+}
+.sidebar ul a:hover {
+  color: var(--color-hover);
+  transform: scale(1.1);
+}
+
+.header-sidebar {
+  padding: 40px 5px;
+  text-align: center;
+}
+.header-sidebar img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--secondary-border);
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+}
+.header-sidebar img:hover {
+  border-color: var(--color-hover);
+  transform: scale(1.1);
+}
 .header-sidebar p {
-  color: var(--secondary-text);
+  font-size: 12px;
+  color: var(--tertiary-text);
 }
 
 footer {
+  background-color: var(--tertiary-bg);
+  border-top: 3px solid var(--primary-border);
+  text-align: center;
   padding: 1rem;
-  background-color: var(--primary-bg);
-  border-top: 3px solid var(--neutral-color);
-  border-radius: 0px 0px 20px 0px;
-  box-shadow: 0px 0px 50px var(--neutral-color);
-  z-index: 1050;
-  transition: all 1s ease;
+  transition: border-color 0.5s ease;
 }
 footer:hover {
-  color: var(--hover-blue);
-  border-color: var(--hover-blue);
-  box-shadow: 0px 1px 20px var(--hover-blue);
-  border-radius: 0;
+  border-color: var(--color-hover);
 }
-footer h4 {
-  color: var(--primary-text);
-}
-@media (min-width: 1024px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: auto;
-    gap: 2rem;
-  }
-  footer .tentang {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  footer .social-link {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  footer .social-link li {
-    padding-left: 1.5rem;
-  }
-  footer .copyright {
-    grid-column: 1/3;
-    grid-row: 2;
-  }
-}
-footer .tentang p {
-  color: var(--muted-text);
-  font-size: 12px;
-}
-footer .social-link ul {
+footer ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 1rem;
 }
-footer .social-link li {
-  padding-left: 1.5rem;
+footer ul a {
+  display: block;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 2px solid var(--primary-border);
+  margin: 10px;
+  color: var(--secondary-text);
+  box-shadow: var(--secondary-shadow);
+  transition: all 0.5s ease;
 }
-footer .social-link a {
+footer ul a:hover {
+  transform: scale(1.2);
+  color: var(--color-hover);
+  border: 2px solid var(--color-hover);
+}
+footer a {
   text-decoration: none;
-  color: var(--accent-blue);
+  color: var(--color-link);
+  transition: color 0.3s ease;
 }
-footer .copyright {
-  text-align: center;
+footer a:hover {
+  color: var(--color-hover);
+}
+footer p {
+  font-size: 14px;
+  color: var(--secondary-text);
 }

@@ -1,41 +1,33 @@
-<!-- START: SIDEBAR -->
+<!-- START : SIDEBAR -->
+
 <aside class="sidebar">
-                
-    <!-- START: HEADER SIDEBAR -->
     <section class="header-sidebar">
-        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Masputrawae">
-        <h2>Masputrawae</h2>
-        <p>Deskripsi Singkat/Slogan</p>
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="logo {{ site.owner }}">
+        <h2>{{ site.owner }}</h2>
+        <p><i><b>{{ site.description }}</b></i></p>
     </section>
-    <!-- END: HEADER SIDEBAR -->
     
-    <!-- START: NAVIGATION SIDEBAR -->
-    <nav>
-        <hr>
-        <h3>Main Menu</h3>
-        <ul>
-            <li><a href="{{ '/' | relative_url }}"><i class="bi bi-house-door"></i> Home</a></li>
-            <li><a href="{{ '/recent-change.html' | relative_url }}"><i class="bi bi-clock-history"></i> Recent Change</a></li>
-            <li><a href="{{ '/last-modified.html' | relative_url }}"><i class="bi bi-pencil-square"></i> Last Modified</a></li>
-            <li><a href="{{ '/archives.html' | relative_url }}"><i class="bi bi-archive"></i> Archives</a></li>
-            <li><a href="{{ '/categories.html' | relative_url }}"><i class="bi bi-tags"></i> Categories</a></li>
-        </ul>
-        <h3>Tools</h3>
-        <ul>
-            <li><a href="{{ '/tutorial.html' | relative_url }}"><i class="bi bi-journal-code"></i> Tutorial</a></li>
-            <li><a href="{{ '/cheat-sheet.html' | relative_url }}"><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
-            <li><a href="{{ '/help.html' | relative_url }}"><i class="bi bi-question-circle"></i> Help</a></li>
-            <li><a href="{{ '/coming-soon.html' | relative_url }}"><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
-        </ul>
-        <h3>Pages</h3>
-        <ul>
-            <li><a href="{{ '/'about.html | relative_url }}"><i class="bi bi-person"></i> About</a></li>
-            <li><a href="{{ '/gallery.html' | relative_url }}"><i class="bi bi-images"></i> Gallery</a></li>
-            <li><a href="{{ '/portfolio.html' | relative_url }}"><i class="bi bi-briefcase"></i> Portfolio</a></li>
-            <li><a href="{{ '/contact.html' | relative_url }}"><i class="bi bi-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
-    <!-- END: NAVIGATION SIDEBAR -->
-    
+    <section class="navigation">
+        
+        <nav>
+            <h3>Main Menu</h3>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="">Recent Change</a></li>
+                <li><a href="">Last Modified</a></li>
+                <li><a href="">Categories</a></li>
+            </ul>
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Portofolio</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </nav>
+        
+    </section>
 </aside>
-<!-- END: NAVIGATION SIDEBAR -->
+
+<!-- END : SIDEBAR -->

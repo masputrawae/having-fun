@@ -2,3 +2,54 @@
 layout: default
 title: Home
 ---
+<main class="home">
+    <!-- Content Section -->
+    <div id="content">
+        {% for post in paginator.posts %}
+        <div>
+            <h2><a href="{{ post.url | relative_url }}" aria-label="Read '{{ post.title }}'">
+                {{ post.title }}
+            </a></h2>
+            <p><small>{{ post.date | date: "%d %B %Y" }}</small></p>
+            <p>{{ post.excerpt | truncatewords: 30 }}</p>
+            <a href="{{ post.url | relative_url }}">Read More</a>
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+    <!-- Pagination Section -->
+    {% if paginator.total_pages > 1 %}
+    <nav>
+        <ul>
+            <!-- Previous Page Link -->
+            <li {% if paginator.previous_page == null %}class="disabled"{% endif %}>
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">&laquo; Prev</a>
+                {% else %}
+                <span aria-hidden="true">&laquo; Prev</span>
+                {% endif %}
+            </li>
+            <!-- Page Numbers -->
+            {% for page in (1..paginator.total_pages) %}
+            <li {% if page == paginator.page %}class="active"{% endif %}>
+                {% if page == paginator.page %}
+                <span>{{ page }}</span>
+                {% elsif page == 1 %}
+                <a href="{{ '/' | relative_url }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+            <!-- Next Page Link -->
+            <li {% if paginator.next_page == null %}class="disabled"{% endif %}>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">Next &raquo;</a>
+                {% else %}
+                <span aria-hidden="true">Next &raquo;</span>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+    {% endif %}
+</main>

@@ -1,0 +1,43 @@
+// footer.scss
+@use '../utils/mixins' as mix;
+footer {
+    background-color: var(--tertiary-bg);
+    border-top: 3px solid var(--primary-border);
+    text-align: center;
+    padding: 1rem;
+    transition: border-color 0.5s ease;
+    &:hover {
+        border-color: var(--color-hover);
+    }
+    ul {
+        @include mix.flex-justify(center);
+        list-style: none;
+        padding: 1rem;
+
+        a {
+            display: block;
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 2px solid var(--primary-border);
+            margin: 10px;
+            color: var(--secondary-text);
+            box-shadow: var(--secondary-shadow);
+
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(1.2);
+                color: var(--color-hover);
+                border: 2px solid var(--color-hover);
+            }
+        }
+    }
+
+    a {
+        @include mix.link-a;
+    }
+
+    p {
+        font-size: 14px;
+        color: var(--secondary-text);
+    }
+}

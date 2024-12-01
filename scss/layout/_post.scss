@@ -1,0 +1,45 @@
+// post.scss
+@use '../utils/mixins' as mix;
+main {
+    padding: clamp(1rem, 2vw, 1rem);
+    background-color: var(--primary-bg);
+
+    .info-posts {
+        margin-top: 10px;
+        padding: 15px;
+        border: 1px solid var(--secondary-border);
+        border-radius: 10px;
+        max-height: min-content;
+
+        p{
+            line-height: 1;
+            color: var(--color-muted);
+        }
+    }
+
+    .toc-posts {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid var(--secondary-border);
+        border-radius: 10px;
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            color: var(--color-active);
+            
+            a {
+                @include mix.link-a(var(--color-link), var(--color-hover));
+
+                &:visited {
+                    color: var(--color-muted);
+                }
+        
+                &:focus {
+                    outline: 2px dashed var(--color-active);
+                    outline-offset: 2px;
+                }
+            }
+        }
+    }
+}

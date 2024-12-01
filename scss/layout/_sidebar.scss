@@ -1,0 +1,61 @@
+// sidebar.scss
+.sidebar {
+    background-color: var(--secondary-bg);
+    border-right: 3px solid var(--secondary-border);
+    box-shadow: 0px 1px 20px var(--secondary-shadow);
+    overflow: auto;
+    &:hover {
+        border-color: var(--color-hover);
+        color: var(--color-hover);
+    }
+    h2, h3 {
+        color: var(--color-h3-h6);
+        transition: all 0.2s ease-out;
+        &:hover {
+            color: var(--color-hover);
+        }
+    }
+
+    h3 {
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 2rem;
+        a {
+            display: block;
+            text-decoration: none;
+            color: var(--color-link);
+            transition: all 0.5s ease;
+            &:hover {
+                color: var(--color-hover);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.header-sidebar {
+    padding: 40px 5px;
+    text-align: center;
+    
+    img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid var(--secondary-border);
+        border-radius: 5px;
+        transition: all 0.2s ease-out;
+        &:hover {
+            border-color: var(--color-hover);
+            transform: scale(1.1);
+        }
+    }
+
+    p {
+        font-size: 12px;
+        color: var(--tertiary-text);
+    }
+}
