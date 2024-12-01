@@ -11,14 +11,18 @@ layout: default
         </small>
     </section>
     
-    <section class="toc-posts">
-        <h4>Daftar Isi:</h4>
-        {% include toc.html html=content %}
-    </section>
+    <div class="main-posts">
+        
+        <section class="toc-posts">
+            <h4>Daftar Isi:</h4>
+            {% include toc.html html=content %}
+        </section>
     
-    <section class="markdown-posts">
-        {{ content }}
-    </section>
+        <section class="markdown-posts">
+            {{ content }}
+        </section>        
+        
+    </div>
     
     <section class="footer-posts">
         <small>
