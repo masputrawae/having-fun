@@ -4,72 +4,10 @@
 <body>
     <!-- START: CONTAINER -->
     <div class="full-container">
-        <!-- START: HEADER -->
-        <header>
-            
-            <!-- START: TITLE HEADER -->
-            <h1>
-                <span class="title-start">My</span>
-                <span class="title-end">Notes</span>
-            </h1>
-            <!-- END: TITLE HEADER -->
-            
-            <!-- START: NAVIGATION HEADER-->
-            <nav>
-                <a href="{{ '/search.html' | relative_url }}"><i class="bi bi-search"></i></a>
-                <a href="" class="switch-mode" id="theme-switcher"><i class="bi-moon-stars switchModeIcon"></i></a>
-                <a href="" class="sidebar-toggle"><i class="bi-list sidebarIcon"></i></a>
-            </nav>
-            <!-- END: NAVIGATION HEADER-->
-            
-        </header>
-        <!-- END: HEADER -->
-        
         <!-- START: CONTAINER MAIN AND SIDEBAR -->
+        {% include partials/header.html %}
         <div class="main-container">
-            
-            <!-- START: SIDEBAR -->
-            <aside class="sidebar">
-                
-                <!-- START: HEADER SIDEBAR -->
-                <section class="header-sidebar">
-                    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Masputrawae">
-                    <h2>Masputrawae</h2>
-                    <p>Deskripsi Singkat/Slogan</p>
-                </section>
-                <!-- END: HEADER SIDEBAR -->
-                
-                <!-- START: NAVIGATION SIDEBAR -->
-                <nav>
-                    <hr>
-                    <h3>Main Menu</h3>
-                    <ul>
-                        <li><a href="{{ '/' | relative_url }}"><i class="bi bi-house-door"></i> Home</a></li>
-                        <li><a href="{{ '/recent-change.html' | relative_url }}"><i class="bi bi-clock-history"></i> Recent Change</a></li>
-                        <li><a href="{{ '/last-modified.html' | relative_url }}"><i class="bi bi-pencil-square"></i> Last Modified</a></li>
-                        <li><a href="{{ '/archives.html' | relative_url }}"><i class="bi bi-archive"></i> Archives</a></li>
-                        <li><a href="{{ '/categories.html' | relative_url }}"><i class="bi bi-tags"></i> Categories</a></li>
-                    </ul>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li><a href="{{ '/tutorial.html' | relative_url }}"><i class="bi bi-journal-code"></i> Tutorial</a></li>
-                        <li><a href="{{ '/cheat-sheet.html' | relative_url }}"><i class="bi bi-card-checklist"></i> Cheat Sheet</a></li>
-                        <li><a href="{{ '/help.html' | relative_url }}"><i class="bi bi-question-circle"></i> Help</a></li>
-                        <li><a href="{{ '/coming-soon.html' | relative_url }}"><i class="bi bi-hourglass-split"></i> Coming Soon</a></li>
-                    </ul>
-                    <h3>Pages</h3>
-                    <ul>
-                        <li><a href="{{ '/'about.html | relative_url }}"><i class="bi bi-person"></i> About</a></li>
-                        <li><a href="{{ '/gallery.html' | relative_url }}"><i class="bi bi-images"></i> Gallery</a></li>
-                        <li><a href="portfolio.html"><i class="bi bi-briefcase"></i> Portfolio</a></li>
-                        <li><a href="{{ '/contact.html' | relative_url }}"><i class="bi bi-envelope"></i> Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- END: NAVIGATION SIDEBAR -->
-                
-            </aside>
-            <!-- END: NAVIGATION SIDEBAR -->
-            
+            {% include partials/sidebar.html %}
             <!-- START: MAIN CONTENT -->
             <main>
                 {{ content }}
@@ -79,45 +17,7 @@
         </div>
         <!-- END: CONTAINER MAIN AND SIDEBAR -->
         
-        <!-- START: FOOTER -->
-        <footer>
-            <!-- START: TENTANG -->
-            <section class="tentang">
-                <h4>Tentang:</h4>
-                <p>
-                    Nulla voluptate est velit proident do sunt. Voluptate incididunt nulla nulla anim consequat. Ex irure voluptate ipsum duis nisi velit anim aliquip proident cillum. Enim sint enim nulla ullamco minim esse in est occaecat. Voluptate id consectetur sunt ullamco ad in irure laborum nulla dolore commodo duis. Sunt sint cupidatat labore culpa est.
-                </p>
-            </section>
-            <!-- END: TENTANG -->
-            
-            <!-- START: SOCIAL LINKS -->
-            <section class="social-link">
-                <ul>
-                    <h4>Social Media:</h4>
-                    <li><a href="{{ site.facebook }}"><i class="bi bi-facebook"></i> Facebook</a></li>
-                    <li><a href="{{ site.twitter }}"><i class="bi bi-twitter"></i> Twitter</a></li>
-                    <li><a href="{{ site.instagram }}"><i class="bi bi-instagram"></i> Instagram</a></li>
-                    <li><a href="{{ site.youtube }}"><i class="bi bi-youtube"></i> YouTube</a></li>
-                    <li><a href="{{ site.github }}"><i class="bi bi-github"></i> Github</a></li>
-                    <li><a href="{{ site.discord }}"><i class="bi bi-discord"></i> Discord</a></li>
-                </ul>                
-            </section>
-            <!-- END: SOCIAL LINKS -->
-            
-            <!-- START: COPYRIGHT -->
-            <section class="copyright">
-                <hr>
-                <p>
-                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
-                    | <a href="{{ '/terms.html' | relative_url }}">Term of Service</a>
-                    | <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
-                    | <a href="#">Back To Top</a>
-                </p>
-                <p>Dibuat Dengan ♥️ | <strong>I Still Appreciate Their Work: </strong><a href="{{ '/credits.html' | relative_url }}">Credits</a></p>
-                <p>&copy; 2024 - Masputrawae - <a href="{{ site.url/my-notes }}">My notes</a> | Semua Hak Cipta Dilindungi.</p>
-            </section>
-            <!-- END: COPYRIGHT -->
-        </footer>
+        {% include partials/footer.html %}
     </div>
     <!-- END: CONTAINER-->
 </body>
