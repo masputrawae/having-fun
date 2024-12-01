@@ -3,6 +3,8 @@ source "https://rubygems.org"
 #=================================[=] Menggunakan Jekyll
 gem "jekyll", "~> 4.3.4"
 gem "jekyll-seo-tag"
+=======
+gem "jekyll-seo-tag" # Untuk optimasi SEO
 gem "webrick"
 
 group :jekyll_plugins do
