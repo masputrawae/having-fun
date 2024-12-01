@@ -97,19 +97,6 @@ body {
   grid-template-columns: 0px 1fr;
   transition: grid-template-columns 0.3s ease;
 }
-.main-container .sidebar {
-  transition: all 0.2s ease-out;
-  opacity: 0;
-  height: 100vh;
-}
-
-.main-container.open {
-  grid-template-columns: 250px 1fr;
-}
-.main-container.open .sidebar {
-  opacity: 1;
-  height: 100%;
-}
 
 header {
   padding: 1rem;
@@ -128,10 +115,6 @@ header:hover {
   border-color: var(--hover-blue);
   box-shadow: 0px 1px 20px var(--hover-blue);
   border-radius: 0;
-}
-header .title-start {
-  color: var(--accent-blue);
-}
 header .title-end {
   color: var(--primary-text);
 }
@@ -152,65 +135,7 @@ header nav a:hover {
   border-color: var(--hover-blue);
   box-shadow: 0px 0px 4px var(--hover-blue);
   transform: scale(1.1);
-}
 
-main {
-  padding: 1rem;
-  margin: 1rem;
-}
-
-.sidebar {
-  background-color: var(--primary-bg);
-  border-bottom: 3px solid var(--neutral-color);
-  border-right: 3px solid var(--neutral-color);
-  box-shadow: 0px 1px 20px var(--neutral-color);
-  overflow: auto;
-}
-.sidebar:hover {
-  border-color: var(--hover-blue);
-  box-shadow: 0px 5px 20px var(--hover-blue);
-  color: var(--hover-blue);
-}
-.sidebar h2, .sidebar h3 {
-  color: var(--secondary-text);
-  transition: all 0.2s ease-out;
-}
-.sidebar h2:hover, .sidebar h3:hover {
-  color: var(--hover-blue);
-}
-.sidebar h3 {
-  padding-left: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-}
-.sidebar ul {
-  list-style: none;
-  padding-left: 3rem;
-}
-.sidebar ul a {
-  display: block;
-  text-decoration: none;
-  color: var(--accent-blue);
-  transition: all 0.5s ease;
-}
-.sidebar ul a:hover {
-  color: var(--accent-cyan);
-  transform: scale(1.1);
-}
-
-.header-sidebar {
-  padding: 50px 5px;
-  text-align: center;
-}
-.header-sidebar img {
-  border: 2px solid var(--neutral-color);
-  border-radius: 5px;
-  transition: all 0.2s ease-out;
-}
-.header-sidebar img:hover {
-  border-color: var(--hover-blue);
-  transform: scale(1.1);
-}
 .header-sidebar p {
   color: var(--secondary-text);
 }

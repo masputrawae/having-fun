@@ -45,6 +45,8 @@
     text-align: center;
     
     img {
+        width: 150px;
+        height: 150px;
         border: 2px solid var(--neutral-color);
         border-radius: 5px;
         transition: all 0.2s ease-out;

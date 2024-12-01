@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="in">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>{{ site.title }} - {{ page.title }}</title>
-</head>
+<html lang="{{ site.lang }}" data-theme="dark">
+    {% include partials/head.html %}
 <body>
-    
+    <!-- START: CONTAINER -->
+    <div class="full-container">
+        <!-- START: CONTAINER MAIN AND SIDEBAR -->
+        {% include partials/header.html %}
+        <div class="main-container">
+            {% include partials/sidebar.html %}
+            <!-- START: MAIN CONTENT -->
+            <main>
+                {{ content }}
+            </main>
+            <!-- END: MAIN CONTENT -->
+            
+        </div>
+        <!-- END: CONTAINER MAIN AND SIDEBAR -->
+        
+        {% include partials/footer.html %}
+    </div>
+    <!-- END: CONTAINER-->
 </body>
 </html>
